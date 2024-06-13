@@ -13,7 +13,7 @@ _$SearchInfoImpl _$$SearchInfoImplFromJson(Map<String, dynamic> json) =>
       productList: (json['product_list'] as List<dynamic>)
           .map((e) => Product.fromJson(e as Map<String, dynamic>))
           .toList(),
-      totalCount: (json['totalCount'] as num).toInt(),
+      totalCount: (json['total_count'] as num).toInt(),
     );
 
 Map<String, dynamic> _$$SearchInfoImplToJson(_$SearchInfoImpl instance) =>

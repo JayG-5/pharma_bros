@@ -17,10 +17,11 @@ class SearchAPI {
       return SearchInfo.fromJson({
         'target_word': targetWord,
         'page': page,
-        ...response.data,
+        ...response.data['data'],
       });
     } on DioException catch (e) {
-      return e.response;
+      // return e.response;
+      return const SearchInfo(targetWord: '', page: 1, productList: [], totalCount: 0);
     }
   }
 }

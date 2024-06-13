@@ -1,5 +1,5 @@
 import 'package:go_router/go_router.dart';
-import 'package:pharmabros/pages/home_view.dart';
+import 'package:pharmabros/pages/home.dart';
 
 final router = GoRouter(
   initialLocation: '/',
@@ -7,7 +7,7 @@ final router = GoRouter(
     GoRoute(
       path: '/',
       name: 'home',
-      builder: (context, state) => const HomePageView(),
+      builder: (context, state) => const HomePage(),
       // routes:  [
       //   GoRoute(
       //     path: '/product/:productId',
@@ -16,11 +16,5 @@ final router = GoRouter(
       //   ),
       // ]
     ),
-    // GoRoute(
-    //   path: '/profile',
-    //   name: 'profile',
-    //   builder: (context, state) => const ProfilePageView(),
-    // ),
-
   ],
 );
