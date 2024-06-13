@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pharmabros/router.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -6,8 +7,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
       title: 'Pharma-bros',
+      routerConfig: router,
       theme: ThemeData(
         fontFamily: 'NotoSansKR',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
