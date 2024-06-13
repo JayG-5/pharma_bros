@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:pharmabros/router.dart';
+import 'package:pharmabros/styles/style.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
@@ -14,6 +14,16 @@ class MyApp extends StatelessWidget {
         fontFamily: 'NotoSansKR',
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        appBarTheme: AppBarTheme(
+          color: Colors.white,
+          surfaceTintColor: Colors.white,
+          shadowColor: Colors.transparent,
+          centerTitle: false,
+          shape: Border(bottom: BorderSide(color: AppStyle.color.buttonContainer))
+        ),
+        iconTheme: IconThemeData(
+          color: AppStyle.color.hintText
+        )
       ),
     );
   }
