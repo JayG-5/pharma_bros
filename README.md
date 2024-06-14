@@ -1,7 +1,7 @@
 # 파마브로스 Flutter 과제
 
 ## 작업 기한
-🗓️ 2024.06.12 ~ 2024.06.16
+🗓️ 2024.06.12 ~ 2024.06.14
 
 ## 구현해야 할 화면
 1. **홈 화면**
@@ -43,3 +43,25 @@
 - 이용약관 및 개인정보처리방침 링크(웹뷰):
     - 이용약관: [https://www.pharma-bros.com/terms](https://www.pharma-bros.com/terms)
     - 개인정보처리방침: [https://www.pharma-bros.com/privacy](https://www.pharma-bros.com/privacy)
+
+
+## Pub
+```yaml
+# 가나다순
+cupertino_icons: ^1.0.6
+dio: ^5.4.3+1
+flutter_riverpod: ^2.5.1
+flutter_svg: ^2.0.10+1
+freezed_annotation: ^2.4.1
+go_router: ^14.1.4
+json_annotation: ^4.9.0
+package_info_plus: ^8.0.0
+riverpod_annotation: ^2.3.5
+webview_flutter: ^4.8.0
+```
+
+## Getting started
+```
+flutter pub get
+flutter run
+```
