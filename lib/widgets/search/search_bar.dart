@@ -33,9 +33,12 @@ class _SearchBarWidgetState extends ConsumerState<SearchBarWidget> {
           controller: textEditingController,
           style: AppStyle.typography.body1,
           textAlignVertical: TextAlignVertical.center,
-          onEditingComplete: () => ref
-              .read(searchBarNotifierProvider.notifier)
-              .set(textEditingController.text),
+          onEditingComplete: () {
+            ref
+                .read(searchBarNotifierProvider.notifier)
+                .set(textEditingController.text);
+            FocusScope.of(context).unfocus();
+          },
           decoration: InputDecoration(
               contentPadding: EdgeInsets.zero,
               isDense: true,

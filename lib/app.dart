@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
       routerConfig: router,
       theme: ThemeData(
         fontFamily: 'NotoSansKR',
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: AppStyle.color.pink),
         useMaterial3: true,
         appBarTheme: AppBarTheme(
           color: Colors.white,
