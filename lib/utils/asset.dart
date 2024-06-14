@@ -38,4 +38,32 @@ class Asset {
         width: width,
         height: height,
       );
+
+  static Widget iconHomeDefault({double? width, double? height}) =>
+      SvgPicture.asset(
+        'assets/images/svg_Icon-home-default.svg',
+        width: width,
+        height: height,
+      );
+
+  static Widget iconHomeSelected({double? width, double? height}) =>
+      SvgPicture.asset(
+        'assets/images/svg_Icon-home-selected.svg',
+        width: width,
+        height: height,
+      );
+
+  static Widget iconProfileDefault({double? width, double? height}) =>
+      SvgPicture.asset(
+        'assets/images/svg_Icon-my-default.svg',
+        width: width,
+        height: height,
+      );
+
+  static Widget iconProfileSelected({double? width, double? height}) =>
+      SvgPicture.asset(
+        'assets/images/svg_Icon-my-selected.svg',
+        width: width,
+        height: height,
+      );
 }

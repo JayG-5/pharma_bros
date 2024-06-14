@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:pharmabros/enums/bottom_navigation_page_type.dart';
 import 'package:pharmabros/providers/home.dart';
 import 'package:pharmabros/styles/style.dart';
 
@@ -14,10 +15,7 @@ class BottomNavigation extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(bottomNavigationNotifierProvider);
     return BottomNavigationBar(
-      items: const [
-        BottomNavigationBarItem(icon: Icon(Icons.home), label: '홈'),
-        BottomNavigationBarItem(icon: Icon(Icons.person), label: '내 정보'),
-      ],
+      items: BottomNavigationPageType.getItem(),
       currentIndex: state,
       onTap: (value) {
         if(isHere(value,state)){
