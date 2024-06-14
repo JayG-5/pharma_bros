@@ -61,10 +61,10 @@ webview_flutter: ^4.8.0
 ```
 
 ## 프리뷰
-|                                           |                                           |                                           |
-| <img src="screenshots/검색.gif" width="200"> | <img src="screenshots/상품디테일.gif" width="200"> | <img src="screenshots/프로필.gif" width="200"> |
-|-------------------------------------------|-------------------------------------------|-------------------------------------------|
-| <img src="screenshots/404.gif" width="200"> | <img src="screenshots/복사.gif" width="200"> | <img src="screenshots/웹뷰.gif" width="200"> |
+| ![검색](screenshots/검색.gif) | ![상품디테일](screenshots/상품디테일.gif) | ![프로필](screenshots/프로필.gif) |
+|:-------------------------:|:---------------------------------:|:-------------------------:|
+| ![404](screenshots/404.gif) | ![복사](screenshots/복사.gif) | ![웹뷰](screenshots/웹뷰.gif) |
+
 
 
 ## Getting started
