@@ -16,7 +16,7 @@ class Asset {
       );
 
   static Widget svgPill({double? width, double? height}) => SvgPicture.asset(
-        'assets/images/svg_icon-pill.svg',
+        'assets/images/svg_Icon-pill.svg',
         width: width,
         height: height,
       );

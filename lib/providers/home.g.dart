@@ -39,7 +39,7 @@ final searchBarNotifierProvider =
 );
 
 typedef _$SearchBarNotifier = AutoDisposeNotifier<String>;
-String _$searchNotifierHash() => r'cc73ffc3dcb706c6d8893e0b2b7b903472519206';
+String _$searchNotifierHash() => r'59f883381f7e5aebbe1c62af17a1be2e01ba9532';
 
 /// See also [SearchNotifier].
 @ProviderFor(SearchNotifier)
