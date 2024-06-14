@@ -17,7 +17,6 @@ class ProductDetailPage extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final productState = ref.watch(productDetailNotifierProvider(productId));
-    print(productState);
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -46,8 +45,6 @@ class ProductDetailPage extends ConsumerWidget {
           ),
         ),
         error: (error, stackTrace) {
-          print(error);
-          print(stackTrace);
           return Center(
             child: Text('error : $error\n$stackTrace'),
           );

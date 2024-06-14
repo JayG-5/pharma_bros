@@ -1,4 +1,3 @@
-import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pharmabros/models/search_info.dart';
 import 'package:pharmabros/services/api.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';

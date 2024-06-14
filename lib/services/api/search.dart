@@ -19,8 +19,7 @@ class SearchAPI {
         'page': page,
         ...response.data['data'],
       });
-    } on DioException catch (e) {
-      // return e.response;
+    } on DioException {
       return const SearchInfo(targetWord: '', page: 1, productList: [], totalCount: 0);
     }
   }

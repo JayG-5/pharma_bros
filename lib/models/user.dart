@@ -1,6 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:flutter/foundation.dart';
-import 'package:pharmabros/models/product.dart';
 
 part 'user.freezed.dart';
 

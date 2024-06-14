@@ -34,7 +34,7 @@ class IntakeMethodCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
       decoration: BoxDecoration(
         color: AppStyle.color.buttonContainer,
         borderRadius: BorderRadius.circular(16),

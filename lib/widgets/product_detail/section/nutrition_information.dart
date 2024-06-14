@@ -19,7 +19,7 @@ class ProductDetailPageNutritionInformationSection extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          ProductDetailPageSectionTitle(title: '영양 기능 정보'),
+          const ProductDetailPageSectionTitle(title: '영양 기능 정보'),
           Gap.height(4),
           Text(
             '국가별 기능성표기가 상이하여, 해외/국내 건강기능식품의 기능성 표기가 다를 수 있습니다.',

@@ -20,23 +20,21 @@ class ProductDetailPageFeaturesSection extends StatelessWidget {
           spacing: 16,
           children: [
             const ProductDetailPageSectionTitle(title: '제품 특징'),
-            ...data.productFeatures
-                .map((e) => Container(
-                      width: box.maxWidth,
-                      padding: const EdgeInsets.symmetric(
-                          horizontal: 16, vertical: 10),
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                        color: AppStyle.color.buttonContainer,
-                        borderRadius: BorderRadius.circular(16),
-                      ),
-                      child: Text(
-                        e,
-                        textAlign: TextAlign.center,
-                        style: AppStyle.typography.body1,
-                      ),
-                    ))
-                .toList()
+            ...data.productFeatures.map((e) => Container(
+                  width: box.maxWidth,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: AppStyle.color.buttonContainer,
+                    borderRadius: BorderRadius.circular(16),
+                  ),
+                  child: Text(
+                    e,
+                    textAlign: TextAlign.center,
+                    style: AppStyle.typography.body1,
+                  ),
+                ))
           ],
         );
       }),
