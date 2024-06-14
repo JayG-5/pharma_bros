@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:pharmabros/styles/style.dart';
 import 'package:pharmabros/utils/gap.dart';
@@ -16,7 +17,7 @@ class ProfilePageFooter extends StatelessWidget {
         children: [
           Row(mainAxisAlignment: MainAxisAlignment.center, children: [
             InkWell(
-              onTap: () {},
+              onTap: () => context.goNamed('terms'),
               child: Text('이용약관',
                   style: AppStyle.typography.body2
                       .copyWith(color: AppStyle.color.footerText)),
@@ -28,7 +29,7 @@ class ProfilePageFooter extends StatelessWidget {
             ),
             Gap.width(10),
             InkWell(
-              onTap: () {},
+              onTap: () => context.goNamed('privacy'),
               child: Text('개인정보처리방침',
                   style: AppStyle.typography.body2
                       .copyWith(color: AppStyle.color.footerText)),
